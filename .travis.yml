@@ -1,0 +1,13 @@
+os: linux
+dist: focal
+language: shell
+vault:
+  token:
+    secure: "0HZWAQIi6aElMSx9pwaD0FPH2A9TxWiD5mPmUTt8ogj399ivJk21X19lVai/3gGFGlAuezjysKYYLaIji3dWnNDUIHPqMDICG0Q33/VBNckEudPCT7M/jdOmH9IJUqfmrX3uMEms9kjsYVQHVFHx85ZAoA/LxzWwh6dNfZrdS+XQK7Ngpilq7OVJiS0G3n/Vqt1z5Ey9ssSpLH59Li86hIsOEZhWd9glfU57MkoPDqTwFUvtmVSyCACMz8ADTd5LaGfR8y/VTbKLQN20qjaXc1FP6fEI7l781Li11s0iEqvTcYT7tDpikBbqt601BH+MzB6J1oyN+t0VwQ5vg7ZAsoFFZ0mL/nlOVZ2cfEyyeIuUORR93lrHXLTyNdgvnt5Qy5crKn38V1CupsiCTgMSCsJeactoPP3I7JrwGp/25ZarhaAVVKCWd37lRfkJwzkLMNC0PHS7x0fd2GE8O2pbFokQMLIqJMJS3oXM6CXEmM+zIMNt7dsJR4eZZG1XdgWwjXhT+j1oUiIjf1gsDQz02XvIQ1e6qFV9sSPkq9GfDpbGkRLphqEL9QIhnB/jMPXLrc37zlqtfO6Zx0uZ9PUN6v0f5jAyhVXvpSfHYnjidr7RsrfXT4Zqf0S+Y5bjC/1Y6Oq7QIObgTGpnOtDEfVr2UyDw/A6tr5imkSrv50v98E="
+  api_url: https://vault-dwztla.travis-ci.com
+  secrets:
+    - testmkd/ibmtest
+
+script:
+  - echo $IBMTEST_FOO
+#this adds comment
